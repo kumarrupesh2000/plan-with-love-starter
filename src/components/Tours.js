@@ -7,7 +7,7 @@ function Tours({tours, removeTour}) {
             </div>
             <div className='cards'>
                 {
-                    tours.map( (tour) => {
+                    tours.map((tour) => {
                         return <Card key={tour.id} {...tour} removeTour={removeTour}></Card>
                     } )
                 }
